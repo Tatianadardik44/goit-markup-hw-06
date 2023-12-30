@@ -62,7 +62,14 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  height: 72px;
+ 
+ height: 56px;
+}
+@media screen and (min-width: 768px) 
+{
+ .header-container {
+height: 72px;
+ } 
 }
 .topchic {
   border-bottom: 1px solid #e7e9fc;
@@ -82,8 +89,14 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  margin-right: 76px;
+  margin-right: 112px;
   align-items: center;
+}
+@media screen and (min-width: 1158px)
+ {
+  .logo {
+ margin-right: 76px;
+  }
 }
 
 .accent {
@@ -98,15 +111,21 @@ img {
 
 .navig {
   display: flex;
-
-  align-items: center;
-  margin-right: 332px;
+   align-items: center;
+  /*margin-right: 332px;*/
+  flex-grow: 1;
+  
 }
 
 .topcik-ul {
   display: inline-flex;
 
   gap: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  .topcik-ul {
+    display: none;
+  }
 }
 .top {
   position: relative;
@@ -149,6 +168,19 @@ img {
   display: flex;
 
   gap: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  .contacts-ul
+   {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157.98px)
+ {
+ .contacts-ul {
+  flex-direction: column;
+  gap: 12px;
+ }
 }
 .contacts {
   display: flex;
@@ -740,9 +772,9 @@ letter-spacing: 0.48px;
 .modal {
   width: 288px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  /*top: 50%;
+  left: 50%;*/
+  /*transform: translateX(-50%) translateY(-50%);*/
   padding: 72px 16px 24px 16px;
  min-height: 584px;
   flex-shrink: 0;
@@ -961,5 +993,61 @@ text-decoration-line: underline;
 .btr-send:focus {
   background-color: #404bbf;
 }
-
-
+.menu-btr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  margin-left: auto;
+}
+@media screen and (min-width:768px) 
+{
+.menu-btr {
+  display: none;
+}   
+}
+.mobile-menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #FFF;
+padding: 72px 16px 40px;
+}
+.mobile-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobile-icon {
+}
+.mobile-link {
+}
+.link-mobile {
+}
+.menu-link-mobile {
+}
+.mobile-address {
+}
+.address-mobile {
+}
+.address-mobile-menu {
+}
+.mobile-menu-socials {
+  display: flex;
+  gap: 40px;
+}
+.socials {
+}
+.mobile-socials-item {
+   width: 40px;
+  height: 40px;
+}
+.socials-link {
+}
+.socials-link-prof {
+}
+.cosial {
+}
