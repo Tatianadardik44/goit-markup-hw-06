@@ -110,7 +110,7 @@ img {
 .navig {
   display: flex;
   align-items: center;
-  /*margin-right: 332px;*/
+
   flex-grow: 1;
 }
 
